@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/*Estilos_Generales*/
+a:link, a:visited{
+	text-decoration: none;
+}
+.container .row{
+	margin-bottom: 3rem;
+}
+/*Inicio_NavBar*/
+.navbar-brand > img {
+	width: 100px;
+}
+.navbar a {
+	color: black;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+}
+.navbarlogo a:hover{
+	background: orangered;
+	color: whitesmoke;
+    border-radius: 0.5rem;
+}
+/*Fin_NavBar*/
+
+/*Inicio_Header*/
+.icons-social-networks > a{
+	transition: .5s filter;
+}
+.icons-social-networks > a:hover{
+	filter: opacity(0.5);
+}
+.icons-social-networks img{
+	--size: 30px;
+	height: var(--size);
+	width: var(--size);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.8;
+}
+.header-main {
+	height: 100vh;
+}
+.photooffice {
+	height: 400px;
+}
+/*Fin_Header*/
+
+/*Inicio_Tarjeta_Mis_Publicaciones*/
+.publicaciones {
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+}
+.icon-service {
+	--box-size: 70px;
+	width: var(--box-size);
+	height: var(--box-size);
+	padding: 10px;
+}
+/*Fin_Tarjeta_Mis_Publicaciones*/
+
+/*Acerca_de_Míi*/
+.acercademi{
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+}
+/*Servicios*/
+.servicios {
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+}
+
+/*Inicio_Formulario*/
+.contact{
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+}
+.contact-text h3{
+	margin: 60px 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+.contact-text h2{
+	font-size: 30px;
+}
+.contact-text p{
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+.contact-list{
+	margin-bottom: 3rem;
+}
+.contact-list li{
+	margin-bottom: 10px;
+	display: block;
+}
+.contact-list li a{
+	display: block;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+	font-weight: 600;
+	transition: all .40s ease;
+}
+.contact-list li a:hover{
+	transform: scale(1.01) translateY(-5px);
+	color: red;
+	text-decoration: none;
+}
+.contact-icons i{
+	height: 40px;
+	width: 40px;
+	border-radius: 0.5rem;
+	color: orangered;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	margin-right: 10px;
+	transition: all .40s ease;
+	text-decoration: none;
+}
+.contact-icons i:hover{
+	transform: scale(1.01) translateY(-5px);
+	color: orange;
+	text-decoration: none;
+}
+
+.contact-form form{
+	position: relative;
+}
+.contact-form form input,
+form textarea{
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 18px;
+	background: #12141c1e;
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	border-radius: 0.5rem;
+}
+.contact-form textarea{
+	resize: none;
+	height: 220px;
+}
+.contact-form form .send{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	background: rgba(0, 0, 0, 0.127);
+	color: orangered;
+	width: 190px;
+	transition: all .40s ease;
+	cursor: pointer;
+}
+
+.last-text p{
+	text-align: center;
+	padding: 15px;
+	color: rgba(0, 0, 0, 0.275);
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.img-logo{
+	height: 60px;
+	width: 200px;
+}
+.contact-icons a{
+	text-decoration: none;
+}
+/*Fin_Formulario*/
+
+
+
+/*Inicio_Contacto*/
+.mail_estilo {
+	color: black;
+}
+.nav a {
+	color: black;
+}
+.logo a{
+	margin-bottom: 1rem;
+}
+/*Fin_contacto*/
+
+
+/*Inicio Responsive*/
+@media screen and (max-width: 376px){
+	body{
+		margin-top: 4rem;
+	}
+	.header-main {
+		height: initial;
+	}
+	.photooffice {
+		height: 240px;
+	}
+	.photo-frame a{
+		font-size: 14px;
+	}
+}
+
