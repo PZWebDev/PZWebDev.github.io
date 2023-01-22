@@ -18,7 +18,7 @@
     <!--Inicio_Fonts_iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!--Fin_Fonts_iconos-->
-    
+
     <title>Estudio Patricia Zamora</title>
 </head>
 
@@ -49,49 +49,57 @@
     <!--Fin_NavBar_Bootstrap-->
 
     <!--Inicio_Main-->
-    <div class="container">
+
+    <div class="container-sm container-header">
         <!--Inicio_Header-->
-        <header class="row align-items-center header-main justify-content-center">
-            <div class="col-6 col-md-4 text-center text-md-start">
+        <header
+            class="row g-0 row-cols-md-1 row-cols-lg-2 justify-content-center align-items-center header-main bg-dark">
+            <div class="text-center text-lg-start mx-auto my-auto columna-main">
                 <!--Saludo-->
-                <h1 class="display-2">
-                    <span class="d-block">¡Hola!</span>
-                    Mi nombre es Patricia Zamora
+                <h1 class="display-4">
+                    <span>¡Hola!</span>
                 </h1>
+                <br>
+                <h2 class="display-4 text-muted text-capitalize">Soy <strong>Patricia Zamora</strong></h2>
+                <br>
                 <!--Profesión-->
-                <p class="text-muted fw-light text-capitalize">
+                <h2 class="display-4 text-muted text-capitalize">
                     Contadora Pública UBA
-                </p>
+                </h2>
+                <br>
                 <!--Redes_Socales-->
-                <div class="d-none d-md-block contact-icons">
+                <div class="d-md-block contact-icons">
                     <!--Linkedin-->
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in icons-rs"></i></a>
                     <!--Facebook-->
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook icons-rs"></i></a>
                     <!--Twitter-->
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter icons-rs"></i></a>
                     <!--Instagram-->
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram icons-rs"></i></a>
                     <!--WhatsApp-->
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp icons-rs"></i></a>
                 </div>
             </div>
-            <div class="col-6 col-md-4">
-                <img src="./imagenes/marissa-grootes-H0YxjMzc6ZQ-unsplash.jpg" alt="Estudio Patricia Zamora"
-                    class="photooffice w-100">
+            <div class="columna-photo">
+                <img src="./imagenes/alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg" alt="Estudio Patricia Zamora"
+                    class="img-thumbnail rounded mx-auto my-auto d-block photooffice">
             </div>
         </header>
         <!--Fin_Header-->
-        <hr>
+    </div>
+    <!--Fin_Main-->
+
+    <div class="container-sm container-cards">
         <!--Inicio_Tarjeta_Mis_Publicaciones-->
         <section class="row justify-content-around text-center">
             <!--Título-->
-            <h2 class="col-16 display-4 text-capitalize mb-3">
+            <h2 class="col-12 display-4 text-capitalize mb-3">
                 Mis Publicaciones
             </h2>
             <!--Tarjetas-->
             <!--Tarjeta_1-->
-            <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
+            <article class="col-md-12 col-lg-4 bg-white rounded shadow p-3 fw-light mb-3 mb-md-3">
                 <!--Icono-->
                 <img src="./imagenes/notifications_active_FILL0_wght400_GRAD0_opsz48.svg" alt="Publicación"
                     class="bg-danger bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
@@ -108,7 +116,7 @@
                 <a href="./pages/mispublicaciones.html" class="btn btn-outline-danger">Ir a Mis Publicaciones</a>
             </article>
             <!--Tarjeta_2-->
-            <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
+            <article class="col-md-12 col-lg-4 bg-white rounded shadow p-3 fw-light mb-3 mb-md-3">
                 <!--Icono-->
                 <img src="./imagenes/notifications_active_FILL0_wght400_GRAD0_opsz48.svg" alt="Publicación"
                     class="bg-danger bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
@@ -125,7 +133,7 @@
                 <a href="./pages/mispublicaciones.html" class="btn btn-outline-danger">Ir a Mis Publicaciones</a>
             </article>
             <!--Tarjeta_3-->
-            <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
+            <article class="col-md-12 col-lg-4 bg-white rounded shadow p-3 fw-light mb-3 mb-md-3">
                 <!--Icono-->
                 <img src="./imagenes/notifications_active_FILL0_wght400_GRAD0_opsz48.svg" alt="Publicación"
                     class="bg-danger bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
@@ -142,41 +150,31 @@
                 <a href="./pages/mispublicaciones.html" class="btn btn-outline-danger">Ir a Mis Publicaciones</a>
             </article>
         </section>
-        <!--Fin_Tarjeta_Mis_Servicios-->
     </div>
-    <!--Fin_Main-->
+    <!--Fin_Tarjeta_Mis_Servicios-->
 
     <!--Inicio_Contacto-->
-    <div class="container justify-content-center text-center logo">
+    <div class="container justify-content-center text-center container-cartel">
         <section class="row justify-content-center">
-            <div class="col-9 col-lg-7 bg-white text-center py-4 px-3 shadow position-relative photo-frame">
+            <div class="col-11 bg-white text-center py-4 px-3 shadow position-relative photo-frame">
                 <p class="h6 text-muted fw-light">Tienes alguna consulta contactame para más información al siguiente
                     mail:</p>
                 <a href="mailto:patriciazamora@patriciazamora.com.ar"
                     class="h3 text-decoration-none mail_estilo">patriciazamora@patriciazamora.com.ar</a>
             </div>
         </section>
-        <!--Redes_Sociales-->
-        <div class="icons-social-networks">
-            <!--Facebook-->
-            <a href="#" target="_blank">
-                <img src="./imagenes/facebook.svg" alt="Facebook">
-            </a>
-            <!--Instagram-->
-            <a href="#" target="_blank">
-                <img src="./imagenes/instagram.svg" alt="Instagram">
-            </a>
+        <!--Redes_Socales-->
+        <div class="d-md-block contact-icons">
             <!--Linkedin-->
-            <a href="#" target="_blank">
-                <img src="./imagenes/linkedin.svg" alt="Linkedin">
-            </a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <!--Facebook-->
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <!--Twitter-->
-            <a href="#" target="_blank">
-                <img src="./imagenes/twitter.svg" alt="Twitter">
-                <!--WhatsApp-->
-                <a href="#" target="_blank">
-                    <img src="./imagenes/whatsapp.svg" alt="Whatsapp">
-                </a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <!--Instagram-->
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <!--WhatsApp-->
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </div>
     <!--Fin_Contacto-->

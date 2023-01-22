@@ -1,6 +1,6 @@
 @import "../sass/variables.scss";
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,15 +11,13 @@
 a:link, a:visited{
 	text-decoration: none;
 }
-.container .row{
-	margin-bottom: 3rem;
-}
+
 /*Inicio_NavBar*/
 .navbar-brand > img {
 	width: 100px;
 }
 .navbar {
-    a {
+	a {
 	    color: black;
 	    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
     }
@@ -34,18 +32,33 @@ a:link, a:visited{
 /*Fin_NavBar*/
 
 /*Inicio_Header*/
-.header-main {
-	height: 100vh;
+.container-header{
+	padding: 0px;
+	margin-top: 68px;
 }
-.photooffice {
-	height: 400px;
-}
+
+header {
+		.columna-main{
+			background-color: yellow;
+				h1{
+					font-size: $font-size_h1;
+				}
+				h2{
+					font-size: $font-size_h2;
+					strong{
+						color: $color_3;
+					}
+				}
+			padding: 12px;
+			}
+		}
+
 /*Fin_Header*/
 
 /*Inicio_Tarjeta_Mis_Publicaciones*/
-.publicaciones {
-	margin-top: 6rem;
-	margin-bottom: 3rem;
+
+.container-cards{
+	margin-top: 30px;
 }
 .icon-service {
 	--box-size: 70px;
@@ -54,6 +67,11 @@ a:link, a:visited{
 	padding: 10px;
 }
 /*Fin_Tarjeta_Mis_Publicaciones*/
+
+/*Inicio_Cartel*/
+.container-cartel{
+	margin-top: 40px;
+}
 
 /*Acerca_de_Mí*/
 .acercademi{
@@ -69,10 +87,9 @@ a:link, a:visited{
 
 /* Iconos RS */
 .contact-icons {
+	margin-top: 20px;
 	a {
 		i {
-			height: 40px;
-			width: 40px;
 			border-radius: 0.5rem;
 			color: $color_3;
 			display: inline-flex;
@@ -190,17 +207,4 @@ a:link, a:visited{
 
 
 /*Inicio Responsive*/
-@media screen and (max-width: 376px){
-	body{
-		margin-top: 4rem;
-	}
-	.header-main {
-		height: initial;
-	}
-	.photooffice {
-		height: 240px;
-	}
-	.photo-frame a{
-		font-size: 14px;
-	}
-}
+
