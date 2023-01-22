@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -32,24 +33,6 @@ a:link, a:visited {
 
 /*Fin_NavBar*/
 /*Inicio_Header*/
-.icons-social-networks > a {
-  transition: 0.5s filter;
-}
-
-.icons-social-networks > a:hover {
-  filter: opacity(0.5);
-}
-
-.icons-social-networks img {
-  --size: 30px;
-  height: var(--size);
-  width: var(--size);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.8;
-}
-
 .header-main {
   height: 100vh;
 }
@@ -73,7 +56,7 @@ a:link, a:visited {
 }
 
 /*Fin_Tarjeta_Mis_Publicaciones*/
-/*Acerca_de_Míi*/
+/*Acerca_de_Mí*/
 .acercademi {
   margin-top: 6rem;
   margin-bottom: 3rem;
@@ -85,53 +68,9 @@ a:link, a:visited {
   margin-bottom: 3rem;
 }
 
-/*Inicio_Formulario*/
-.contact {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 3rem;
-}
-
-.contact-text h3 {
-  margin: 60px 0;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.contact-text h2 {
-  font-size: 30px;
-}
-
-.contact-text p {
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 2rem;
-}
-
-.contact-list {
-  margin-bottom: 3rem;
-}
-.contact-list li {
-  margin-bottom: 10px;
-  display: block;
-}
-.contact-list li a {
-  display: block;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 20px;
-  font-weight: 600;
-  transition: all 0.4s ease;
-}
-.contact-list li a:hover {
-  transform: scale(1.01) translateY(-5px);
-  color: red;
-  text-decoration: none;
-}
-
-.contact-icons i {
+/*Fin_Servicios*/
+/* Iconos RS */
+.contact-icons a i {
   height: 40px;
   width: 40px;
   border-radius: 0.5rem;
@@ -144,19 +83,59 @@ a:link, a:visited {
   transition: all 0.4s ease;
   text-decoration: none;
 }
-
-.contact-icons i:hover {
+.contact-icons a i:hover {
   transform: scale(1.01) translateY(-5px);
-  color: orange;
+  color: rgba(128, 128, 128, 0.611);
   text-decoration: none;
 }
 
-.contact-form form {
+/*Fin_Iconos RS*/
+/*Inicio_Formulario*/
+.contact {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
+.contact .contact-text h3 {
+  margin: 60px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact .contact-text h2 {
+  font-size: 30px;
+}
+.contact .contact-text p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+.contact .contact-list {
+  margin-bottom: 3rem;
+}
+.contact .contact-list li {
+  margin-bottom: 10px;
+  display: block;
+}
+.contact .contact-list a {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+.contact .contact-list a:hover {
+  transform: scale(1.01) translateY(-5px);
+  color: red;
+  text-decoration: none;
+}
+.contact .contact-form form {
   position: relative;
 }
-
-.contact-form form input,
-form textarea {
+.contact .contact-form form input,
+.contact .contact-form form textarea {
   border: none;
   outline: none;
   width: 100%;
@@ -167,13 +146,11 @@ form textarea {
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
 }
-
-.contact-form textarea {
+.contact .contact-form textarea {
   resize: none;
   height: 220px;
 }
-
-.contact-form form .send {
+.contact .contact-form form .send {
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
@@ -182,24 +159,6 @@ form textarea {
   width: 190px;
   transition: all 0.4s ease;
   cursor: pointer;
-}
-
-.last-text p {
-  text-align: center;
-  padding: 15px;
-  color: rgba(0, 0, 0, 0.275);
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.img-logo {
-  height: 60px;
-  width: 200px;
-}
-
-.contact-icons a {
-  text-decoration: none;
 }
 
 /*Fin_Formulario*/

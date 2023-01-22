@@ -65,6 +65,32 @@ a:link, a:visited{
 	margin-top: 6rem;
 	margin-bottom: 3rem;
 }
+/*Fin_Servicios*/
+
+/* Iconos RS */
+.contact-icons {
+	a {
+		i {
+			height: 40px;
+			width: 40px;
+			border-radius: 0.5rem;
+			color: $color_3;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 40px;
+			margin-right: 10px;
+			transition: all .40s ease;
+			text-decoration: none;
+		}
+		i:hover {
+			transform: scale(1.01) translateY(-5px);
+			color: $color_4;
+			text-decoration: none;
+		}
+	}
+}
+/*Fin_Iconos RS*/
 
 /*Inicio_Formulario*/
 .contact{
@@ -110,29 +136,6 @@ a:link, a:visited{
             }
     }
 
-    .contact-icons {
-        i{
-	    height: 40px;
-	    width: 40px;
-	    border-radius: 0.5rem;
-	    color: $color_3;
-	    display: inline-flex;
-	    align-items: center;
-	    justify-content: center;
-	    font-size: 40px;
-	    margin-right: 10px;
-	    transition: all .40s ease;
-	    text-decoration: none;
-        }
-        i:hover{
-	    transform: scale(1.01) translateY(-5px);
-	    color: blueviolet;
-	    text-decoration: none;
-        }
-        a{
-            text-decoration: none;
-        }
-    }
     .contact-form {
         form{
 	        position: relative;
