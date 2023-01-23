@@ -34,24 +34,43 @@ a:link, a:visited {
   margin-top: 68px;
 }
 
-header .columna-main {
-  background-color: yellow;
-  padding: 12px;
+.header-main {
+  min-height: 100vh;
 }
+
+.img-main {
+  height: 560px;
+}
+
 header .columna-main h1 {
-  font-size: 30px;
+  font-size: 60px;
+}
+header .columna-main h1 strong {
+  color: orangered;
 }
 header .columna-main h2 {
-  font-size: 26px;
+  font-size: 42px;
 }
-header .columna-main h2 strong {
-  color: orangered;
+header .columna-main h3 {
+  font-size: 32px;
+}
+header .columna-main p {
+  font-size: 16px;
 }
 
 /*Fin_Header*/
 /*Inicio_Tarjeta_Mis_Publicaciones*/
 .container-cards {
-  margin-top: 30px;
+  margin-top: 32px;
+}
+.container-cards section h2 {
+  font-size: 42px;
+}
+.container-cards section article h3 {
+  font-size: 32px;
+}
+.container-cards section article p {
+  font-size: 16px;
 }
 
 .icon-service {
@@ -68,24 +87,57 @@ header .columna-main h2 strong {
 }
 
 /*Acerca_de_Mí*/
-.acercademi {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
+.container-about {
+  padding: 0px;
+  margin-top: 68px;
+  height: 100vh;
+  box-shadow: 4px 1px #afafaf;
+}
+
+.columna-about h1 {
+  font-size: 60px;
+}
+.columna-about h2 {
+  font-size: 42px;
+}
+.columna-about p {
+  font-size: 16px;
 }
 
 /*Servicios*/
-.servicios {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
+.container-servicios {
+  padding: 0px;
+  margin-top: 68px;
+}
+
+.icons-services a i {
+  color: orangered;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-right: 10px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+.icons-services a i:hover {
+  transform: scale(1.01) translateY(-5px);
+  text-decoration: none;
 }
 
 /*Fin_Servicios*/
+/*Inicio_Mis_Publicaciones*/
+.container-publicaciones {
+  padding: 0px;
+  margin-top: 100px;
+}
+
+/*Fin_Mis_Publicaciones*/
 /* Iconos RS */
 .contact-icons {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .contact-icons a i {
-  border-radius: 0.5rem;
   color: orangered;
   display: inline-flex;
   align-items: center;
@@ -103,13 +155,13 @@ header .columna-main h2 strong {
 
 /*Fin_Iconos RS*/
 /*Inicio_Formulario*/
-.contact {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 3rem;
+.container-contact {
+  padding: 0px;
+  margin-top: 100px;
+}
+
+.contact .contact-text {
+  margin-bottom: 20px;
 }
 .contact .contact-text h3 {
   margin: 60px 0;
@@ -123,9 +175,6 @@ header .columna-main h2 strong {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 2rem;
-}
-.contact .contact-list {
-  margin-bottom: 3rem;
 }
 .contact .contact-list li {
   margin-bottom: 10px;
@@ -189,5 +238,75 @@ header .columna-main h2 strong {
 
 /*Fin_contacto*/
 /*Inicio Responsive*/
+@media screen and (max-width: 376px) {
+  .container-header {
+    margin-top: 68px;
+  }
+  .container-header .header-main {
+    height: initial;
+  }
+  .container-header .header-main h1 {
+    font-size: 32px;
+  }
+  .container-header .header-main h3 {
+    font-size: 20px;
+  }
+  .container-header .header-main img {
+    height: 300px;
+  }
+  .container-cards section h2 {
+    font-size: 24px;
+  }
+  .container-cards section article h3 {
+    font-size: 18px;
+  }
+  .container-cartel section h3 {
+    font-size: 18px;
+  }
+  .container-about .header-main h1 {
+    font-size: 32px;
+  }
+  .container-about .header-main h2 {
+    font-size: 24px;
+  }
+  .container-about .header-main p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) and (min-width: 376px) {
+  .container-header {
+    margin-top: 68px;
+  }
+  .container-header .header-main {
+    height: initial;
+  }
+  .container-header .header-main h1 {
+    font-size: 32px;
+  }
+  .container-header .header-main h3 {
+    font-size: 20px;
+  }
+  .container-header .header-main img {
+    height: 300px;
+  }
+  .container-cards section h2 {
+    font-size: 24px;
+  }
+  .container-cards section article h3 {
+    font-size: 18px;
+  }
+  .container-cartel section h3 {
+    font-size: 18px;
+  }
+  .container-about .header-main h1 {
+    font-size: 32px;
+  }
+  .container-about .header-main h2 {
+    font-size: 24px;
+  }
+  .container-about .header-main p {
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */

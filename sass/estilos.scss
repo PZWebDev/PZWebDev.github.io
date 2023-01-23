@@ -35,21 +35,33 @@ a:link, a:visited{
 .container-header{
 	padding: 0px;
 	margin-top: 68px;
+	
+}
+.header-main{
+	min-height: 100vh;
+}
+.img-main {
+	height: 560px;
 }
 
 header {
 		.columna-main{
-			background-color: yellow;
-				h1{
-					font-size: $font-size_h1;
+			h1{
+				font-size: $font-size_h1;
+				strong {
+					color: $color_3;
 				}
-				h2{
-					font-size: $font-size_h2;
-					strong{
-						color: $color_3;
-					}
-				}
-			padding: 12px;
+			}
+			h2{
+				font-size: $font-size_h2;
+			}
+			h3 {
+				font-size: $font-size_h3;
+			}
+			p {
+				font-size: $font-size_p;
+			}
+			
 			}
 		}
 
@@ -58,7 +70,20 @@ header {
 /*Inicio_Tarjeta_Mis_Publicaciones*/
 
 .container-cards{
-	margin-top: 30px;
+	margin-top: 32px;
+		section{
+			h2{
+				font-size: $font-size_h2;
+			}
+			article {
+				h3 {
+					font-size: $font-size_h3;
+				}
+				p {
+					font-size: $font-size_p;
+				}
+			}
+	}
 }
 .icon-service {
 	--box-size: 70px;
@@ -74,23 +99,63 @@ header {
 }
 
 /*Acerca_de_Mí*/
-.acercademi{
-	margin-top: 6rem;
-	margin-bottom: 3rem;
+.container-about{
+	padding: 0px;
+	margin-top: 68px;
+	height: 100vh;
+	box-shadow: 4px 1px #afafaf;
 }
+.columna-about{
+	h1 {
+		font-size: $font-size_h1;
+	}
+	h2 {
+		font-size: $font-size_h2;
+	}
+	p {
+		font-size: $font-size_p;
+	}
+}
+
 /*Servicios*/
-.servicios {
-	margin-top: 6rem;
-	margin-bottom: 3rem;
+.container-servicios{
+	padding: 0px;
+	margin-top: 68px;
 }
+.icons-services {
+	a {
+		i {
+			color: $color_3;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 40px;
+			margin-right: 10px;
+			transition: all .40s ease;
+			text-decoration: none;
+		}
+		i:hover {
+			transform: scale(1.01) translateY(-5px);
+			text-decoration: none;
+		}
+	}
+}
+
+
 /*Fin_Servicios*/
+
+/*Inicio_Mis_Publicaciones*/
+.container-publicaciones {
+	padding: 0px;
+	margin-top: 100px;
+}
+/*Fin_Mis_Publicaciones*/
 
 /* Iconos RS */
 .contact-icons {
-	margin-top: 20px;
+	margin-top: 30px;
 	a {
 		i {
-			border-radius: 0.5rem;
 			color: $color_3;
 			display: inline-flex;
 			align-items: center;
@@ -110,17 +175,15 @@ header {
 /*Fin_Iconos RS*/
 
 /*Inicio_Formulario*/
-.contact{
-	margin-top: 6rem;
-	margin-bottom: 3rem;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	gap: 3rem;
-    
-    .contact-text {
+.container-contact {
+	padding: 0px;
+	margin-top: 100px;
+}
+.contact{	
+	.contact-text {
+		margin-bottom: 20px;
         h3{
-	        margin: 60px 0;
+			margin: 60px 0;
 	        font-size: 20px;
 	        font-weight: 600;
         }
@@ -134,8 +197,7 @@ header {
         }
     }
     .contact-list{
-	    margin-bottom: 3rem;
-            li{
+	        li{
 	            margin-bottom: 10px;
 	            display: block;
             }
@@ -195,7 +257,7 @@ header {
 }
 .nav {
     a {
-	    color: black;
+		color: black;
     }
 }
 .logo {
@@ -207,4 +269,103 @@ header {
 
 
 /*Inicio Responsive*/
+@media screen and (max-width: 376px){
+	.container-header{
+		margin-top: 68px;
+		.header-main{
+			height: initial;
+				h1 {
+					font-size: 32px;
+				}
+				h3 {
+					font-size: 20px;
+				}
+				img {
+					height: 300px;
+				}
+			}
+		}
+	.container-cards{
+		section {
+			h2{
+				font-size: 24px;
+			}
+			article {
+				h3 {
+					font-size: 18px;
+				}
+			}	
+		}	
+	}
+	.container-cartel{
+		section {
+			h3{
+				font-size: 18px;
+			}
+		}
+	}
+	.container-about {
+		.header-main{
+			h1 {
+				font-size: 32px;
+			}
+			h2 {
+				font-size: 24px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+		}
+	}
 
+
+@media (max-width: 768px) and (min-width: 376px){
+	.container-header{
+		margin-top: 68px;
+		.header-main{
+			height: initial;
+				h1 {
+					font-size: 32px;
+				}
+				h3 {
+					font-size: 20px;
+				}
+				img {
+					height: 300px;
+				}
+			}
+		}
+	.container-cards{
+		section {
+			h2{
+				font-size: 24px;
+			}
+			article {
+				h3 {
+					font-size: 18px;
+				}
+			}	
+		}	
+	}
+	.container-cartel{
+		section {
+			h3{
+				font-size: 18px;
+			}
+		}
+	}
+	.container-about {
+		.header-main{
+			h1 {
+				font-size: 32px;
+			}
+			h2 {
+				font-size: 24px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+}
