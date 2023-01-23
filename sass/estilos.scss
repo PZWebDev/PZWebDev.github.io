@@ -1,4 +1,4 @@
-@import "../sass/variables.scss";
+@import "_variables";
 
 *{
     margin: 0;
@@ -47,23 +47,19 @@ a:link, a:visited{
 header {
 		.columna-main{
 			h1{
+				font-family: $font_2;
 				font-size: $font-size_h1;
+				text-shadow: 5px 5px 10px rgb(121, 120, 120);
 				strong {
 					color: $color_3;
 				}
 			}
-			h2{
-				font-size: $font-size_h2;
-			}
 			h3 {
+				font-family: $font_2;
 				font-size: $font-size_h3;
 			}
-			p {
-				font-size: $font-size_p;
-			}
-			
-			}
 		}
+	}
 
 /*Fin_Header*/
 
@@ -73,13 +69,16 @@ header {
 	margin-top: 32px;
 		section{
 			h2{
+				font-family: $font_1;
 				font-size: $font-size_h2;
 			}
 			article {
 				h3 {
+					font-family: $font_1;
 					font-size: $font-size_h3;
 				}
 				p {
+					font-family: $font_2;
 					font-size: $font-size_p;
 				}
 			}
@@ -107,12 +106,16 @@ header {
 }
 .columna-about{
 	h1 {
+		font-family: $font_2;
 		font-size: $font-size_h1;
+		text-shadow: 5px 5px 10px rgb(121, 120, 120);
 	}
 	h2 {
+		font-family: $font_1;
 		font-size: $font-size_h2;
 	}
 	p {
+		font-family: $font_1;
 		font-size: $font-size_p;
 	}
 }
@@ -184,13 +187,16 @@ header {
 		margin-bottom: 20px;
         h3{
 			margin: 60px 0;
+			font-family: $font_2;
 	        font-size: 20px;
 	        font-weight: 600;
         }
         h2{
+			font-family: $font_2;
 	        font-size: 30px;
         }
         p{
+			font-family: $font_1;
 	        font-size: 20px;
 	        line-height: 30px;
 	        margin-bottom: 2rem;
@@ -226,7 +232,8 @@ header {
 	    width: 100%;
 	    padding: 18px;
 	    background: #12141c1e;
-	    font-size: 1rem;
+		font-family: $font_2;
+	    font-size: $font-size_h4;
 	    font-weight: 600;
 	    margin-bottom: 0.5rem;
 	    border-radius: 0.5rem;
@@ -237,7 +244,8 @@ header {
         }
         form .send{
 	    display: inline-block;
-	    font-size: 20px;
+		font-family: $font_2;
+	    font-size: $font-size_h4;
 	    font-weight: 500;
 	    background: rgba(0, 0, 0, 0.127);
 	    color: orangered;
@@ -351,7 +359,7 @@ header {
 	.container-cartel{
 		section {
 			h3{
-				font-size: 18px;
+				font-size: 16px;
 			}
 		}
 	}
